@@ -1,0 +1,9 @@
+[submodule "BE"]
+	path = BE
+	url = https://github.com/melly8954/be25-2nd-biddingmate-biddinggo.git
+[submodule "FE"]
+	path = FE
+	url = https://github.com/melly8954/be25-3rd-biddingmate-biddinggo.git
+[submodule "Infra"]
+	path = Infra
+	url = https://github.com/melly8954/be25-4th-biddingmate-biddinggo.git
