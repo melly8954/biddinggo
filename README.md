@@ -109,7 +109,7 @@
 
 ## 📍 기존 서비스와의 차별점
 
-### 📌 기존 서비스
+### 기존 서비스
 
 #### KREAM
 - 패션/스니커즈 특화 플랫폼  
@@ -121,7 +121,7 @@
 - UI/UX가 올드하고 접근성이 낮음  
 - 실시간성 및 사용자 경험 부족  
 
-### ✅ Biddinggo의 차별점
+### Biddinggo의 차별점
 
 #### 1. 빅크리(Vickrey) 기반 경매 시스템
 - 최고 입찰자가 낙찰되지만, 실제 결제 금액은 두 번째로 높은 입찰가로 결정  
@@ -171,7 +171,6 @@
 
 - **플랫폼 경쟁력 확보**
   - AI + 실시간 시스템 + 경매 구조 결합
-<br/>
 
 ---
 <br>
@@ -179,7 +178,6 @@
 # 2.  요구사항 정의서
 ![](img/Srs.png)<br/>
 🔗[ 요구사항 정의서 ](https://docs.google.com/spreadsheets/d/16YGKpTcpo310JjvUu9Q1Nm9atCI-XYx5TB2GD3ocx3E/edit?gid=1901741334#gid=1901741334)
-<br/>
 
 ---
 <br>
@@ -239,7 +237,6 @@
   <img src="https://img.shields.io/badge/erdcloud-0B4F6C?style=for-the-badge&logo=icloud&logoColor=white">
   <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 </p>
-<br/>
 
 ---
 <br>
