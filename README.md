@@ -71,17 +71,16 @@
 6. [시스템 아키텍처](#6--시스템-아키텍처)
 7. [API 명세서](#7--api-명세서)
 8. [테스트 계획 및 결과 보고서](#8--테스트-계획-및-결과-보고서)
-9. [팀 notion](#9--팀-notion)
-10. [발표 자료](#10--발표자료)
-11. [회고록](#11--회고)
-
-<br/>
+9. [기능 시연](#9--기능-시연)
+10. [CICD 파이프라인](#10--cicd-파이프라인)
+11. [CI/CD 시연](#11-cicd-시연)
+12. [팀 notion](#12--팀-notion)
+13. [회고](#13--회고)
 
 ---
-
+<br/>
 
 # 1.  프로젝트 개요
-<br/> 
 
 ## 📍 프로젝트 소개
 **Biddinggo는 실시간 경매 기반의 중고 및 리셀 거래 플랫폼입니다.**  
@@ -90,7 +89,7 @@
 또한, 실시간 알림(SSE) 기반으로 입찰 상황을 즉시 반영하여 사용자에게 몰입감 있는 거래 경험을 제공합니다.  
 특히, **빅크리 경매(Vickrey Auction, 2등 가격 경매)** 방식을 도입하여 보다 공정하고 전략적인 가격 형성을 지원합니다.
 
----
+<br/>
 
 ## 📍 배경 (이 서비스가 필요한 이유)
 
@@ -106,7 +105,7 @@
 - UI/UX가 직관적이지 않고 사용성이 떨어짐  
 - 실시간 입찰 경험 부족 및 시스템 반응 속도 문제  
 
----
+<br/>
 
 ## 📍 기존 서비스와의 차별점
 
@@ -121,8 +120,6 @@
 - 전통적인 경매 플랫폼  
 - UI/UX가 올드하고 접근성이 낮음  
 - 실시간성 및 사용자 경험 부족  
-
----
 
 ### ✅ Biddinggo의 차별점
 
@@ -156,7 +153,7 @@
 - 직관적인 경매 흐름 제공  
 - 기존 경매 서비스 대비 사용성 개선  
 
----
+<br/>
 
 ## 📍 기대 효과
 
@@ -177,6 +174,7 @@
 <br/>
 
 ---
+<br>
 
 # 2.  요구사항 정의서
 ![](img/Srs.png)<br/>
@@ -184,9 +182,9 @@
 <br/>
 
 ---
+<br>
 
 # 3.  기술 스택
-<br/>
 
 ## 🔧 Backend
 <p>
@@ -211,7 +209,7 @@
 <p>
   <img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
   <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
-  <img src="https://img.shields.io/badge/docker--compose-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+  <img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
   <img src="https://img.shields.io/badge/cloudflare%20r2-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
   <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
   <img src="https://img.shields.io/badge/kt%20cloud-FF0000?style=for-the-badge&logo=icloud&logoColor=white">
@@ -227,9 +225,10 @@
 
 ## ⚙️ CI/CD
 <p>
+  <img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
+  <img src="https://img.shields.io/badge/argocd-EF7B4D?style=for-the-badge&logo=argo&logoColor=white">
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/ghcr-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/github%20actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
 </p>
 
 ## 🤝 Collaboration
@@ -243,63 +242,963 @@
 <br/>
 
 ---
+<br>
 
 # 4.  ERD
 ![](img/erd.png)<br/>
 🔗[ ERD ](https://www.erdcloud.com/d/zfbRbiMEYW5M3uegM)
-<br/>
 
 ---
+<br>
 
 # 5.  테이블 정의서
 ![](img/table.PNG)<br/>
 🔗[MariaDB 테이블 정의서](https://docs.google.com/spreadsheets/d/16YGKpTcpo310JjvUu9Q1Nm9atCI-XYx5TB2GD3ocx3E/edit?gid=114956902#gid=114956902)
 
 🔗[Supabase 테이블 정의서](https://docs.google.com/spreadsheets/d/16YGKpTcpo310JjvUu9Q1Nm9atCI-XYx5TB2GD3ocx3E/edit?gid=1153156764#gid=1153156764)
-<br/>
 
 ---
+<br>
 
 # 6.  시스템 아키텍처
-<br/>
 
-![](https://github.com/user-attachments/assets/15f9e2e3-2915-4a29-8dea-22d367af813c)<br/>
+<img width="1235" height="1134" alt="Image" src="https://github.com/user-attachments/assets/96d61b52-ec98-406d-bae5-0f93b300c47b" /><br/>
 <br/>
 
 ---
+<br>
+
 # 7.  API 명세서
 ![](img/table.PNG)<br/>
 🔗[API 명세서](https://www.notion.so/3441072487c38020a8c7f55914b4c234?v=3441072487c3818cbbfa000c9265993d&source=copy_link)
-<br/>
 
 ---
+<br>
 
 # 8.  테스트 계획 및 결과 보고서
 <br/>
 
 🔗[테스트 계획 및 결과 보고서](https://docs.google.com/spreadsheets/d/16YGKpTcpo310JjvUu9Q1Nm9atCI-XYx5TB2GD3ocx3E/edit?gid=1106294099#gid=1106294099)
-<br/>
 
 ---
+<br>
 
-# 9.  팀 notion
+# 9.  기능 시연
+<details>
+  <summary>시연 상세보기</summary>
+  <br />
+
+  <details style="margin-left: 20px;">
+    <summary>회원가입</summary>
+    <ul>
+      <br>
+      <li>최초 소셜 로그인 시 회원가입 화면이 표시되며 필수 정보를 입력하면 회원가입이 완료됩니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/소셜회원가입.gif" width="800" alt="회원가입 시연" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>로그인</summary>
+    <ul>
+      <br>
+      <li>등록된 계정으로 간편하게 로그인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/로그인.gif" width="800" alt="로그인 시연" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>로그아웃</summary>
+    <ul>
+      <br>
+      <li>현재 세션을 종료하고 안전하게 로그아웃합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/로그아웃.gif" width="800" alt="로그아웃 시연" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>홈 화면</summary>
+    <ul>
+      <br>
+      <li>메인 배너를 통해 서비스의 특징을 파악하고 실시간으로 업데이트되는 인기 경매 물품 목록을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/홈화면.gif" width="800" alt="홈 화면" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>일반 경매 등록</summary>
+    <ul>
+      <br>
+      <li>매자가 상품 정보와 시작가 여유 있는 마감 기한을 설정하여 기본적인 경매 물품으로 등록합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/일반경매등록.gif" width="800" alt="일반 경매 등" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>타임딜 경매 등록</summary>
+    <ul>
+      <br>
+      <li>단시간 내에 종료되는 전략적인 경매를 위해 짧은 마감 시간을 설정한 타임딜 상품을 등록합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/타임딜경매등록.gif" width="800" alt="타임딜 경매 등록" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>연장 경매 등록</summary>
+    <ul>
+      <br>
+      <li>경매 등록 시 '연장 경매' 옵션을 선택하여 마감 직전 입찰 시 시간이 자동으로 연장되는 상품을 생성합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/연장경매등록.gif" width="800" alt="연장 경매 등록" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>연장 경매</summary>
+    <ul>
+      <br>
+      <li>경매 종료 1분 전 입찰이 발생하면 마감 시간이 자동으로 3분 연장되어 치열한 입찰 경쟁이 유지되는 로직을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/연장경매.gif" width="800" alt="연장 경매" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>검수 신청</summary>
+    <ul>
+      <br>
+      <li>사전 검수 상품 등록을 위해 검수 서비스를 신청합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/검수신청.gif" width="800" alt="검수 신청" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>검수 배송 정보 등록</summary>
+    <ul>
+      <br>
+      <li>판매자가 검수를 위해 물품을 지정된 주소로 관리자에게 발송합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/검수배송정보등록.gif" width="800" alt="검수 배송 정보 등록" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>검수 승인 [관리자]</summary>
+    <ul>
+      <br>
+      <li>검수 결과가 적합한 상품에 대해 승인을 처리합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/검수승인.gif" width="800" alt="검수 승인" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>검수 반려 [관리자]</summary>
+    <ul>
+      <br>
+      <li>상품 정보가 부적합하거나 검수 기준 미달 시 요청을 거절합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/검수반려.gif" width="800" alt="검수 반" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>검수 반려 확인</summary>
+    <ul>
+      <br>
+      <li>검수 반려 이후 반려된 상품의 현재 상태를 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/검수반려이후.gif" width="800" alt="검수 반려 확인" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>신고 및 자동 정지 시스템</summary>
+    <ul>
+      <br>
+      <li>부적절한 활동으로 누적 신고 10회 초과 시 해당 사용자의 계정이 자동으로 정지되어 서비스 이용이 제한되는 보호 로직을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/신고.gif" width="800" alt="신고 및 자동 정지 시스템" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>낙찰 프로세스</summary>
+    <ul>
+      <br>
+      <li>경매 마감 직후 최고가 입찰자에게 낙찰 알림이 발송되며 구매자와 판매자의 마이페이지 내역에 각각 거래 정보가 즉시 등록되는 것을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/낙찰.gif" width="800" alt="낙찰 프로세스" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>즉시 구매</summary>
+    <ul>
+      <br>
+      <li>즉시 낙찰 가능 경매에서 낙찰을 진행하고 구매 내역에 즉시 등록되는 것을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/즉시구매.gif" width="800" alt="즉시구매" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>경매 문의 답변 등록 - 상세페이지</summary>
+    <ul>
+      <br>
+      <li>상품 상세페이지에서 직접 문의를 등록하고 동일한 페이지에서 즉시 답변을 작성하여 소통합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/경매문의상세페이지답변.gif" width="800" alt="경매문의-상세페이지답변" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>경매 문의 답변 등록 - 마이페이지</summary>
+    <ul>
+      <br>
+      <li>상세페이지에서 등록된 문의를 마이페이지에서 통합 조회하고 편리하게 답변을 등록하여 관리합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/경매문의마이페이지답변.gif" width="800" alt="경매문의-상세페이지답변" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>입찰 프로세스 (1)</summary>
+    <ul>
+      <br>
+      <li>보유 포인트 초과 입찰 시 에러 메시지를 확인하고 잔액 범위 내 입찰 성공 후 포인트 차감 및 상세·마이페이지 내역 반영을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/첫번째입찰.gif" width="800" alt="입찰 프로세스 (1)" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>입찰 프로세스 (2)</summary>
+    <ul>
+      <br>
+      <li>동일한 경매에 재입찰 시 기존 입찰금을 제외한 추가 차액만큼만 포인트가 차감되는 결제 로직을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/두번째입찰.gif" width="800" alt="입찰 프로세스 (2)" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>마이페이지 조회</summary>
+    <ul>
+      <br>
+      <li>대시보드, 입찰·구매·판매 내역, 관심 경매, 경매 관리 및 문의 내역까지 사용자의 모든 활동 데이터를 한눈에 확인하고 관리합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/마이페이지조회.gif" width="800" alt="마이페이지 조회" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>포인트 충전</summary>
+    <ul>
+      <br>
+      <li>충전 금액 입력 및 가상계좌 발급 후 토스 개발자 센터를 통한 입금 처리와 포인트 내역 반영까지의 전 과정을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/포인트충전.gif" width="800" alt="포인트 충전" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>포인트 인출</summary>
+    <ul>
+      <br>
+      <li>보유 포인트를 인출 신청하고 포인트 이용 내역에 인출 정보가 즉시 업데이트되는 것을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/포인트인출.gif" width="800" alt="포인트 인출" />
+    </p>
+  </details>
+
+   <details style="margin-left: 20px;">
+    <summary>1대1 문의</summary>
+    <ul>
+      <br>
+      <li>문의 필수값 검증 후 등록을 완료하고 관리자 페이지의 답변 등록을 거쳐 사용자가 최종 답변을 확인하는 전 과정을 시연합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/1대1문의.gif" width="800" alt="1대1 문의" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>탈퇴</summary>
+    <ul>
+      <br>
+      <li>마이페이지에서 회원 탈퇴를 진행하고 이후 기존 계정으로 로그인이 불가능한 상태가 되는 것을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/탈퇴.gif" width="800" alt="탈퇴" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>낙찰 이후 배송지 정보 등록</summary>
+    <ul>
+      <br>
+      <li>구매자의 배송지 입력과 판매자의 운송장 정보 등록 후 구매자 화면에서 '구매 확정' 버튼이 활성화되는 단계별 거래 흐름을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/낙찰이후배송등록.gif" width="800" alt="낙찰 이후 배송지 정보 등록" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>낙찰 이후 구매 확정 및 리뷰</summary>
+    <ul>
+      <br>
+      <li>구매 확정 및 리뷰 작성을 진행하며 판매자의 대금 정산 확인과 판매자 프로필에 리뷰가 즉시 반영되는 통합 프로세스를 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/낙찰이후구매확정리뷰.gif" width="800" alt="낙찰 이후 구매 확정 및 리뷰" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>프로필 수정</summary>
+    <ul>
+      <br>
+      <li>닉네임, 계좌번호, 이미지 등 개인 정보를 자유롭게 수정하고 관리할 수 있으며 닉네임은 첫 1회 변경 이후 30일 뒤에 재수정이 가능합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/프로필수정.gif" width="800" alt="프로필 수정 시연" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>배송지 관리</summary>
+    <ul>
+      <br>
+      <li>배송지 추가/삭제 및 기본 배송지 설정을 통해 편리한 주소록 관리가 가능합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/배송지관리.gif" width="800" alt="배송지 관리 시연" />
+    </p>
+  </details>
+
+ <details style="margin-left: 20px;">
+    <summary>사용자 관리 [관리자]</summary>
+    <ul>
+      <br>
+      <li>관리자 페이지에서 특정 계정을 비활성화하여 접근을 차단하고 필요 시 다시 복귀시켜 정상적인 서비스 이용을 가능하게 합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/어드민사용자관리.gif" width="800" alt="사용자 관리" />
+    </p>
+  </details>
+  
+  <details style="margin-left: 20px;">
+    <summary>공지사항 추가 [관리자]</summary>
+    <ul>
+      <br>
+      <li>필수값 입력 검증 후 공지사항을 등록하며 등록과 동시에 모든 사용자에게 실시간 알림이 전송되는 것을 확인합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/어드민공지사항.gif" width="800" alt="공지사항 추가" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>Admin 로그인 [관리자]</summary>
+    <ul>
+      <br>
+      <li>아이디 및 비밀번호 필수값 입력 검증을 거쳐 관리자 전용 대시보드에 안전하게 접속합니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/어드민로그인.gif" width="800" alt="Admin 로그인" />
+    </p>
+  </details>
+
+  <details style="margin-left: 20px;">
+    <summary>Admin 로그아웃 [관리자]</summary>
+    <ul>
+      <br>
+      <li>사용 중인 관리자 세션을 안전하게 종료하고 메인 화면으로 돌아갑니다.</li>
+    </ul>
+    <p align="center">
+      <img src="./docs/demo/어드민로그아웃.gif" width="800" alt="Admin 로그아" />
+    </p>
+  </details>
+</details>
+
+---
+<br>
+
+# 10.  CI/CD 파이프라인
+<br/>
+
+<details><summary>통합 관리 Jenkins 파이프라인</summary>
+<br/>
+<img width="1123" height="446" alt="Image" src="https://github.com/user-attachments/assets/6bb90a71-f81b-4b24-b9d6-31646931829a" />
+<br/>
+  
+```
+pipeline {
+  agent any
+
+  environment {
+    FRONTEND_JOB = 'biddinggo-frontend'
+    BACKEND_JOB = 'biddinggo-backend'
+  }
+
+  stages {
+    stage('Check CI Skip') {
+      steps {
+        script {
+          def skipStatus = sh(script: 'git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git log -1 --pretty=%B | grep -q "\\[skip ci\\]"', returnStatus: true)
+          env.SKIP_PIPELINE = skipStatus == 0 ? 'true' : 'false'
+          if (env.SKIP_PIPELINE == 'true') {
+              env.SKIP_REASON = 'latest commit contains [skip ci]'
+              echo 'Skipping build because the latest commit contains [skip ci].'
+          }
+        }
+      }
+    }
+
+    stage('Detect Changed Areas') {
+      when {
+        expression { env.SKIP_PIPELINE != 'true' }
+      }
+      steps {
+        script {
+          def baseCommit = env.GIT_PREVIOUS_SUCCESSFUL_COMMIT ?: env.GIT_PREVIOUS_COMMIT
+          def changedText = ''
+
+          if (baseCommit?.trim() && sh(script: "git cat-file -e ${baseCommit}^{commit}", returnStatus: true) == 0) {
+            changedText = sh(script: "git diff --name-only ${baseCommit} HEAD", returnStdout: true).trim()
+          } else {
+            changedText = sh(script: "git show --name-only --pretty=format:'' HEAD", returnStdout: true).trim()
+          }
+
+          def changedFiles = changedText ? changedText.split('\n').findAll { it } : []
+
+          env.FRONTEND_CHANGED = changedFiles.any { it.startsWith('infra/k8s/frontend/') }.toString()
+          env.BACKEND_CHANGED = changedFiles.any { it.startsWith('infra/k8s/backend/') }.toString()
+
+          echo "Changed files:\n${changedFiles.join('\n')}"
+          echo "Frontend changed: ${env.FRONTEND_CHANGED}"
+          echo "Backend changed: ${env.BACKEND_CHANGED}"
+        }
+      }
+    }
+
+    stage('Trigger Build Jobs') {
+      when {
+        expression { env.SKIP_PIPELINE != 'true' }
+      }
+      steps {
+        script {
+          if (env.FRONTEND_CHANGED == 'true') {
+            echo "Triggering frontend job: ${env.FRONTEND_JOB}"
+            def frontendBuild = build job: env.FRONTEND_JOB, wait: true
+            env.FRONTEND_BUILD_NUMBER = frontendBuild.number.toString()
+          }
+
+          if (env.BACKEND_CHANGED == 'true') {
+            echo "Triggering backend job: ${env.BACKEND_JOB}"
+            def backendBuild = build job: env.BACKEND_JOB, wait: true
+            env.BACKEND_BUILD_NUMBER = backendBuild.number.toString()
+          }
+
+          if (env.FRONTEND_CHANGED != 'true' && env.BACKEND_CHANGED != 'true') {
+            echo 'No frontend/backend source changes detected. Nothing to trigger.'
+          }
+        }
+      }
+    }
+  }
+
+  post {
+    success {
+      script {
+        if (env.SKIP_PIPELINE == 'true') {
+          echo """
+============================================================
+  ⏭️  CI skipped
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  📝 Reason
+    Message    : ${env.SKIP_REASON ?: 'latest commit contains [skip ci]'}
+
+============================================================
+"""
+        } else {
+          echo """
+============================================================
+  ✅ BiddingGo coordinator pipeline succeeded
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  🚦 Trigger
+    Frontend   : ${env.FRONTEND_CHANGED == 'true' ? env.FRONTEND_JOB : 'skipped'}
+    Backend    : ${env.BACKEND_CHANGED == 'true' ? env.BACKEND_JOB : 'skipped'}
+
+============================================================
+"""
+        }
+      }
+    }
+    failure {
+      echo """
+============================================================
+  ❌ BiddingGo coordinator pipeline failed
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  🔎 Debug
+    Console    : ${env.BUILD_URL}console
+
+============================================================
+"""
+    }
+  }
+}
+
+```
+<details><summary>파이프라인 상세</summary>
+  Declarative: Checkout SCM : Jenkins가 GitHub 저장소를 자동 체크아웃 <br/>
+  Check CI Skip : 최신 커밋 메시지에 [skip ci]가 있으면 파이프라인 스킵 <br/>
+  Detect Changed Areas : 변경 파일을 기준으로 frontend/backend의 manifest 변경 여부 감지 <br/>
+  Trigger Build Jobs : 변경된 영역의 하위 Jenkins Job을 순차 실행하고 빌드 번호 저장
+  </details>  
+  
+</details>
+
+<br/>
+
+<details><summary>프론트엔드 Jenkins 파이프라인</summary>
+<br/>
+<img width="1127" height="440" alt="Image" src="https://github.com/user-attachments/assets/5c6c32db-d821-44ff-8f2c-358b3284f367" />
+<br/>
+  
+```
+pipeline {
+  agent any
+
+  options {
+    disableConcurrentBuilds()
+  }
+
+  environment {
+    GHCR_REGISTRY = 'ghcr.io'
+    GHCR_OWNER = 'beyond-sw-camp'
+    IMAGE_NAME = 'be25-3rd-biddingmate-biddinggo'
+    GHCR_IMAGE_NAME = "${GHCR_REGISTRY}/${GHCR_OWNER}/${IMAGE_NAME}"
+
+    CICD_REPO_URL = 'github.com/beyond-sw-camp/be25-4th-biddingmate-biddinggo.git'
+    FRONTEND_DEPLOYMENT_MANIFEST = 'infra/k8s/frontend/deployment.yaml'
+
+    VITE_API_BASE_URL = 'https://api.bidding-go.shop'
+    VITE_TOSS_CLIENT_KEY = 'test_ck_4yKeq5bgrpPoPA0lxOkXrGX0lzW6'
+  }
+
+  stages {
+    stage('Docker Build') {
+      steps {
+        script {
+          env.IMAGE_TAG = "${env.BUILD_NUMBER}"
+        }
+
+        sh '''
+          docker build --no-cache \
+            --build-arg VITE_API_BASE_URL=$VITE_API_BASE_URL \
+            --build-arg VITE_TOSS_CLIENT_KEY=$VITE_TOSS_CLIENT_KEY \
+            -t $GHCR_IMAGE_NAME:$IMAGE_TAG \
+            -t $GHCR_IMAGE_NAME:latest \
+            .
+        '''
+
+        sh 'docker image inspect $GHCR_IMAGE_NAME:$IMAGE_TAG'
+      }
+    }
+
+    stage('Push to GHCR') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+          sh '''
+            echo "$GITHUB_TOKEN" | docker login $GHCR_REGISTRY -u "$GITHUB_USER" --password-stdin
+            docker push $GHCR_IMAGE_NAME:$IMAGE_TAG
+            docker push $GHCR_IMAGE_NAME:latest
+            docker logout $GHCR_REGISTRY
+          '''
+        }
+      }
+    }
+
+    stage('Update Frontend Deployment') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+          sh '''
+            rm -rf cicd-repo
+            git clone https://$GITHUB_USER:$GITHUB_TOKEN@$CICD_REPO_URL cicd-repo
+
+            cd cicd-repo
+
+            git config user.name "jenkins-bot"
+            git config user.email "jenkins-bot@users.noreply.github.com"
+
+            sed -i "s|image: .*|image: $GHCR_IMAGE_NAME:$IMAGE_TAG|" $FRONTEND_DEPLOYMENT_MANIFEST
+
+            grep "image: $GHCR_IMAGE_NAME:$IMAGE_TAG" $FRONTEND_DEPLOYMENT_MANIFEST
+
+            git diff -- $FRONTEND_DEPLOYMENT_MANIFEST
+            git add $FRONTEND_DEPLOYMENT_MANIFEST
+            git diff --cached --quiet && echo "No frontend image change." || git commit -m "ci: update frontend image to $IMAGE_TAG [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          '''
+        }
+      }
+    }
+  }
+
+  post {
+    success {
+      echo """
+============================================================
+  ✅ BiddingGo frontend pipeline succeeded
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  🐳 Image
+    Version    : ${env.GHCR_IMAGE_NAME}:${env.IMAGE_TAG}
+
+============================================================
+"""
+    }
+
+    failure {
+      echo """
+============================================================
+  ❌ BiddingGo frontend pipeline failed
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  🔎 Debug
+    Console    : ${env.BUILD_URL}console
+
+============================================================
+"""
+    }
+  }
+}
+```
+<details><summary>파이프라인 상세</summary>
+  Declarative: Checkout SCM : Jenkins가 GitHub 저장소를 자동 체크아웃 <br/>
+  Docker Build : 프론트엔드 Docker 이미지를 Jenkins 빌드 번호 태그와 latest 태그로 빌드 <br/>
+  Push to GHCR : 빌드된 프론트엔드 이미지를 GHCR에 push <br/>
+  Update Frontend Deployment : Job 빌드 번호로 프론트엔드의 deployment.yaml 이미지 태그 수정 후 main에 push
+</details>
+
+</details>
+
+<br/>
+
+<details><summary>백엔드 Jenkins 파이프라인</summary>
+<br/>
+<img width="1121" height="442" alt="Image" src="https://github.com/user-attachments/assets/7b034184-27c5-470a-9f05-fa271e4390db" />
+<br/>
+  
+```
+pipeline {
+  agent any
+
+  options {
+    disableConcurrentBuilds()
+  }
+
+  environment {
+    GHCR_REGISTRY = 'ghcr.io'
+    GHCR_OWNER = 'beyond-sw-camp'
+    IMAGE_NAME = 'be25-2nd-biddingmate-biddinggo'
+    GHCR_IMAGE_NAME = "${GHCR_REGISTRY}/${GHCR_OWNER}/${IMAGE_NAME}"
+
+    CICD_REPO_URL = 'github.com/beyond-sw-camp/be25-4th-biddingmate-biddinggo.git'
+    BACKEND_DEPLOYMENT_MANIFEST = 'infra/k8s/backend/deployment.yaml'
+  }
+
+  stages {
+    stage('Docker Build') {
+      steps {
+        script {
+          env.IMAGE_TAG = "${env.BUILD_NUMBER}"
+        }
+
+        sh '''
+          docker build --no-cache \
+            -t $GHCR_IMAGE_NAME:$IMAGE_TAG \
+            -t $GHCR_IMAGE_NAME:latest \
+            .
+        '''
+
+        sh 'docker image inspect $GHCR_IMAGE_NAME:$IMAGE_TAG'
+      }
+    }
+
+    stage('Push to GHCR') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+          sh '''
+            echo "$GITHUB_TOKEN" | docker login $GHCR_REGISTRY -u "$GITHUB_USER" --password-stdin
+            docker push $GHCR_IMAGE_NAME:$IMAGE_TAG
+            docker push $GHCR_IMAGE_NAME:latest
+            docker logout $GHCR_REGISTRY
+          '''
+        }
+      }
+    }
+
+    stage('Update Backend Deployment') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+          sh '''
+            rm -rf cicd-repo
+            git clone https://$GITHUB_USER:$GITHUB_TOKEN@$CICD_REPO_URL cicd-repo
+
+            cd cicd-repo
+
+            git config user.name "jenkins-bot"
+            git config user.email "jenkins-bot@users.noreply.github.com"
+
+            echo "Before:"
+            grep -n "image:" $BACKEND_DEPLOYMENT_MANIFEST
+
+            sed -i "s|image: .*|image: $GHCR_IMAGE_NAME:$IMAGE_TAG|" $BACKEND_DEPLOYMENT_MANIFEST
+
+            echo "After:"
+            grep -n "$GHCR_IMAGE_NAME:$IMAGE_TAG" $BACKEND_DEPLOYMENT_MANIFEST
+
+            git diff -- $BACKEND_DEPLOYMENT_MANIFEST
+            git add $BACKEND_DEPLOYMENT_MANIFEST
+            git diff --cached --quiet && echo "No backend image change." || git commit -m "ci: update backend image to $IMAGE_TAG [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          '''
+        }
+      }
+    }
+  }
+
+  post {
+    success {
+      echo """
+============================================================
+  ✅ BiddingGo backend pipeline succeeded
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  🐳 Image
+    Version    : ${env.GHCR_IMAGE_NAME}:${env.IMAGE_TAG}
+
+============================================================
+"""
+    }
+
+    failure {
+      echo """
+============================================================
+  ❌ BiddingGo backend pipeline failed
+============================================================
+
+  🧭 Build
+    Job        : ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    Duration   : ${currentBuild.durationString.replace(' and counting', '')}
+
+  🔎 Debug
+    Console    : ${env.BUILD_URL}console
+
+============================================================
+"""
+    }
+  }
+}
+```
+<details><summary>파이프라인 상세</summary>
+  Declarative: Checkout SCM : Jenkins가 GitHub 저장소를 자동 체크아웃 <br/>
+  Docker Build : 백엔드 Docker 이미지를 Jenkins 빌드 번호 태그와 latest 태그로 빌드 <br/>
+  Push to GHCR : 빌드된 백엔드 이미지를 GHCR에 push <br/>
+  Update Frontend Deployment : Job 빌드 번호로 백엔드의 deployment.yaml 이미지 태그 수정 후 main에 push
+</details>
+
+</details>
+
+---
+<br>
+
+# 11. CI/CD 시연
+
+<details>
+<summary>📌 CI/CD 전체 시나리오 보기</summary>
+
+<br/>
+
+<img width="1690" height="841" alt="Image" src="https://github.com/user-attachments/assets/78414dc2-fae3-42d5-a876-06e117d2f061" />
+
+## 시나리오
+
+1. Developer Push
+    - 개발자가 코드를 수정하고 develop 브랜치에 push 합니다.
+
+2. GitHub Webhook Trigger
+    - GitHub Webhook이 Jenkins에 빌드 이벤트를 전달합니다.
+
+3. Jenkins CI Pipeline
+    - 최신 소스 코드를 checkout 합니다.
+    - 애플리케이션 빌드 및 테스트를 수행합니다.
+    - Docker 이미지를 생성합니다.
+    - 생성된 이미지를 GHCR(GitHub Container Registry)에 Push 합니다.
+    - Kubernetes Manifest의 이미지 태그를 최신 버전으로 변경합니다.
+
+4. GitOps Manifest Update
+    - 수정된 Kubernetes Manifest를 별도의 Manifest Repository(k8s/)에 Push 합니다.
+
+5. Argo CD Sync Detection
+    - Argo CD가 Manifest Repository 변경 사항을 감지합니다.
+
+6. Kubernetes Deployment
+    - 변경된 Manifest를 Kubernetes Cluster에 반영합니다.
+    - Rolling Update 방식으로 무중단 배포를 수행합니다.
+
+</details>
+
+
+<details>
+<summary>🚀 백엔드 배포 과정</summary>
+
+<br/>
+
+## 백엔드 
+
+### 젠킨스 수행
+
+📽️[ 백엔드 젠킨스 ](https://www.youtube.com/watch?v=8yNteZhcY50) 
+
+<img width="1310" height="647" alt="Image" src="https://github.com/user-attachments/assets/8c411deb-4b74-4100-a17f-de567d52722b" />
+
+### ArgoCD 배포
+
+📽️[ 백엔드 ArgoCD ](https://www.youtube.com/watch?v=AGdeFLccURE)
+
+<img width="1377" height="645" alt="Image" src="https://github.com/user-attachments/assets/bb3957e0-1e6d-4c8a-a2db-9a15f41dc6f0" />
+
+### Manifests 결과
+
+<img width="1907" height="876" alt="Image" src="https://github.com/user-attachments/assets/7d1f14ba-bc0d-4817-9f4a-18bb7c4f813b" />
+
+</details>
+
+
+<details>
+<summary>🎨 프론트엔드 배포 과정</summary>
+
+<br/>
+
+## 프론트
+
+### 젠킨스 수행
+
+📽️[ 프론트 젠킨스 ](https://youtu.be/bRz8vDVpGfo)
+
+<img width="1240" height="617" alt="Image" src="https://github.com/user-attachments/assets/d7e409b2-1358-4b1a-bea4-0572d7c29440" />
+
+### ArgoCD 배포
+
+📽️[ 프론트엔드 ArgoCD ](https://youtu.be/EYA67qtOV-g)
+
+<img width="1303" height="612" alt="Image" src="https://github.com/user-attachments/assets/f02b8098-34a3-4539-b46d-b3fca63f2bd3" />
+
+### Manifests 결과
+
+<img width="1918" height="956" alt="Image" src="https://github.com/user-attachments/assets/21a26651-5bf3-4905-ac68-7bf2eb10818e" />
+
+<br/>
+
+</details>
+
+
+<details>
+<summary>⚙️ 통합관리 배포 과정</summary>
+
+<br/>
+
+## 통합관리
+
+### 젠킨스 수행
+
+📽️[ 통합관리 젠킨스 ](https://youtu.be/LRn-8iS_6QM)
+
+<img width="1235" height="611" alt="Image" src="https://github.com/user-attachments/assets/9d0f36a4-c56c-406e-8cdd-546b11510710" />
+
+### ArgoCD 배포
+
+📽️[ 통합관리 ArgoCD ](https://youtu.be/4KkbAsrXCrM)
+
+<img width="1293" height="612" alt="Image" src="https://github.com/user-attachments/assets/ae486f21-ada4-4059-bf47-4afcad909ec0" />
+
+</details>
+
+---
+<br>
+
+# 12.  팀 notion
 <br/>
 
 🔗[팀 notion](https://www.notion.so/2-2fb1072487c380368604fa96626503a4?source=copy_link)
-<br/>
 
 ---
+<br>
 
-# 10.  발표자료
-<br/>
-
-🔗[발표자료](docs/biddinggo-presentation.pdf)
-<br/>
-
----
-
-# 11.  회고
-<br/>
+# 13.  회고
 
 #### 김진혁
 > 첫 개발 프로젝트를 팀장을 맡아 진행함에 큰 트러블 없이 계획대로 일찍 개발이 완료된 점이 팀원 모두가 정말 잘 도와준 것 같아서 이 글을 통해서라도 감사의 인사를 드립니다. 이번 프로젝트는 2월부터 시작이되어 4월 20일에 마감이 되었는데, 2월 당시만 하더라도 프론트엔드는 커녕 스프링 조차 처음써보는 단계였습니다. 자바는 익숙해도 스프링을 처음이라 전체 프로젝트 구조를 어떻게 짜야 될 지 고민이 많았습니다. 그럴 때 일수록 매일을 찾아보고 물어보면서 한 스탭씩 나아갔 던 것 같습니다. 프로젝트 내내 매번이 새로운 기술을 쓰고 해보지 않은 코드를 짜는 것이 마치 어둠 속을 천천히 가는게 아닌 전력 질주를 하는 느낌이라 두려움도 컸습니다. 뒤돌아서 보면 그렇게 무작정 코드를 짜고 좌절했던 경험들이 가장 빠르게 프로젝트를 이해하는 길임을 느낍니다. 이번 프로젝트에선 인증인가(oauth2), 관리자 공지사항, sse, 프론트엔드를 담당했습니다. 저희 프로젝트는 jwt 기반 oauth2와 관리자는 자체 로그인으로 구현을 기획했습니다. 가장 어려웠던 부분은 OAuth2 자체를 붙이는 것보다, 로그인 이후 인증 흐름을 JWT 필터와 Spring Security 필터 체인에 안정적으로 녹여내는 과정이었습니다. OAuth2 인증 성공 후 access/refresh 토큰을 어떤 지점에서 발급하고 어떤 방식으로 전달할지 설계하는 것부터, 필터 순서에 따라 인증이 누락되거나 401이 반복되는 문제를 해결하는 데 많은 시행착오가 있었습니다. SSE도 단순 연결이 아니라 운영 관점의 안정성이 핵심이었습니다. SseEmitter 기반으로 사용자별 emitter를 ConcurrentHashMap<memberId, SseEmitter>로 관리하고, onCompletion, onTimeout, onError 콜백에서 즉시 제거하도록 구성해 누수를 방지했습니다. 또한 전송 실패 시 stale emitter를 정리하고, JWT 인증 이후 사용자 컨텍스트 기준으로 이벤트를 발행해 권한 없는 구독을 막았습니다. 이 경험을 통해 기능 구현 자체보다 인증과 실시간 통신의 전체 라이프사이클을 설계하고 안정화하는 역량이 더 중요하다는 것을 배웠습니다.
